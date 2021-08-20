@@ -295,3 +295,7 @@
 </div>
 <!--End Row-->
 @endsection
+
+@section('indexjs')
+<script src="{{ URL::asset('assets/js/index.js'); }}"></script>
+@endsection

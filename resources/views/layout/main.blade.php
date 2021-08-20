@@ -118,8 +118,6 @@
     <script src="{{ URL::asset('assets/plugins/simplebar/js/simplebar.js'); }}"></script>
     <!-- sidebar-menu js -->
     <script src="{{ URL::asset('assets/js/sidebar-menu.js'); }}"></script>
-    <!-- loader scripts -->
-    <script src="{{ URL::asset('assets/js/jquery.loading-indicator.js'); }}"></script>
     <!-- Custom scripts -->
     <script src="{{ URL::asset('assets/js/app-script.js'); }}"></script>
     <!-- Chart js -->
@@ -127,12 +125,13 @@
     <script src="{{ URL::asset('assets/plugins/Chart.js/Chart.min.js'); }}"></script>
 
     <!-- Index js -->
-    <script src="{{ URL::asset('assets/js/index.js'); }}"></script>
+    @yield('indexjs')
 
     <!-- Full Calendar -->
     <script src="{{ URL::asset('assets/plugins/fullcalendar/js/moment.min.js'); }}"></script>
     <script src="{{ URL::asset('assets/plugins/fullcalendar/js/fullcalendar.min.js'); }}"></script>
     <script src="{{ URL::asset('assets/plugins/fullcalendar/js/fullcalendar-custom-script.js'); }}"></script>
+    
 
 </body>
 
