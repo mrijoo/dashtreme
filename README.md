@@ -11,8 +11,8 @@
 > git clone https://github.com/mrijoo/dashtreme.git
 > cd dashtreme
 > composer update
-> php artisan key:generate
 > cp .env.example .env
+> php artisan key:generate
 ```
 
 ###### Run
