@@ -12,7 +12,9 @@
 > cd dashtreme
 > composer update
 > php artisan key:generate
+> cp .env.example .env
 ```
+
 ###### Run
 ```bash
 > php artisan serve
