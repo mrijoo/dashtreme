@@ -1,5 +1,6 @@
 <?php
 
+use App\http\controllers\form;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,16 +34,12 @@ Route::get('/icons.html', function () {
     return view('icons');
 });
 
-Route::get('/login.html', function () {
-    return view('login');
-});
+Route::get('/login.html', [form::class, 'login']);
+
+Route::get('/register.html', [form::class, 'register']);
 
 Route::get('/profile.html', function () {
     return view('profile');
-});
-
-Route::get('/register.html', function () {
-    return view('register');
 });
 
 Route::get('/reset-password.html', function () {
